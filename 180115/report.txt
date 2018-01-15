@@ -1,0 +1,11 @@
+January 15, 2017.
+
+During today's lecture we learnt:
+
+Android Applications' Life Cycle.
+	The lifecycle executes several methods of activities as shown on the directions.pdf image. They can be harnessed to achieve tasks according to state changes of the app.
+	
+Logging.
+	We used three methods of active logging in an Android App: Alerts, Toasts and Console logs.
+
+Jonathan Ginsburg.
