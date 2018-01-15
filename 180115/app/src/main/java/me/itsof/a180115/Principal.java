@@ -14,6 +14,7 @@ public class Principal extends AppCompatActivity {
     private final String MSG = "ALC";
 
     private void toast(String message) {
+        // Code taken from: https://developer.android.com/guide/topics/ui/notifiers/toasts.html
         Context context = getApplicationContext();
         CharSequence text = message;
         int duration = Toast.LENGTH_SHORT;
@@ -22,6 +23,7 @@ public class Principal extends AppCompatActivity {
     }
 
     private void alert(String title, String message) {
+        // Code taken from: https://www.mkyong.com/android/android-alert-dialog-example/
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
         // set title
