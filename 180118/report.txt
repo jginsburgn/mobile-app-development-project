@@ -1,0 +1,24 @@
+January 29, 2017.
+
+Button: es una clase para recibir interacción de click del usuario.
+findViewById: es un método para obtener referencias de los componentes que forman parte del layout asociado a la actividad.
+R.id.button: es una referencia que se le pasa al método anterior para obtener el componente con identificador "button".
+setOnClickListener: permite agregar un handler para recibir los eventos de click en un componente visual.
+View.OnClickListener: es una clase que tiene el método abstracto para escuchar eventos de click en componentes visuales.
+onClick: es un método virtual de la clase View.OnClickListener para escuchar eventos de click.
+Intent: es el medio por el cual se puede preparar el accionamiento de otras actividades de la aplicación.
+startActivity: permite ejecutar el accionamiento de otra actividad dado un Intent.
+Bundle(): es la clase contenedora de información que se transmite de una actividad a otra en un Intent.
+intent.putExtra: es el método de un intento para agregar información a su Bundle.
+getActivity(): es el método mediante el cual se obtiene la actividad que se relaciona con el Fragment actual.
+getIntent(): es el método que obtiene el intento mediante el cual se llegó a la presente actividad.
+getStringExtra(): es un método para obtener un string asociado a una llave de un Bundle.
+putString(): es un método para asociar un string a una llave en un Bundle.
+getExtras(): es un método de los intentos para obtener su Bundle relacionado.
+extras.getString(): permite obtener un string asociado a alguna llave en el Bundle llamado extras.
+imageView: es un componente visual para desplegar una imagen en pantalla.
+videoViews: es un componente visual para desplegar un video en pantalla.
+Timer: es una clase que abstrae el concepto de temporizar acciones.
+TimerTask: es la clase que prepara acciones para ser temporizadas en un Timer.
+
+Jonathan Ginsburg.
