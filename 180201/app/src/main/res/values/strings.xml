@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">180201</string>
+    <string name="guardar_string">Guardar</string>
+    <string name="abrir_string">Abrir</string>
+    <string name="android_string">Android</string>
+    <string name="autoguardar_string">Autoguardar</string>
+    <string name="prompt_label">Car brands:</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_array">Array</string>
+    <string name="title_shared">Shared</string>
+    <string name="title_shared_array">Shared Array</string>
+</resources>

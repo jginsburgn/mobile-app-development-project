@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.itsof.a180201.Main">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnGuardar_clickeado"
+        android:text="@string/guardar_string" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abrir_string"
+        android:onClick="btnAbrir_clickeado"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/android_string"
+        android:onClick="btnAndroid_clickeado"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/android" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/editText"
+        android:text="@string/prompt_label" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView" />
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkbox_Click"
+        android:text="@string/autoguardar_string" />
+
+    <CheckBox
+        android:id="@+id/starcb"
+        style="?android:attr/starStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="starCheckbox_Click" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Opción 1" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Opción 2" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toggleButtonClick"/>
+
+    <Button
+        android:id="@+id/crm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRM"
+        android:onClick="goToCRM"/>
+
+</LinearLayout>
