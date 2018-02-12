@@ -23,7 +23,8 @@
         <activity android:name=".video" />
         <activity android:name=".Omnibar" />
         <activity android:name=".Web" />
-        <activity android:name=".Calculator"></activity>
+        <activity android:name=".Calculator" />
+        <activity android:name=".RateGrade"></activity>
     </application>
 
 </manifest>

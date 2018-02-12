@@ -40,4 +40,8 @@ public class Principal extends AppCompatActivity {
             }
         });
     }
+
+    public void goToGrader(View v) {
+        startActivity(new Intent(Principal.this, RateGrade.class));
+    }
 }
