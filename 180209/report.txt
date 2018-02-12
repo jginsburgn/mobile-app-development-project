@@ -1,0 +1,33 @@
+Button
+
+<button> con ion-button
+
+findViewById, R.id.button, setOnClickListener, View.OnClickListener, onClick
+
+Se hace por medio de atributos de HTML en el view.
+
+Intent
+startActivity
+
+Se hace con navCtrl y su método push.
+
+Bundle()
+intent.putExtra
+getActivity()
+getIntent()
+getStringExtra()
+putString()
+getExtras()
+extras.getString()
+
+Se pasa un objeto en el método push arriba mencionado.
+
+imageView,
+videoViews,
+
+Se hace con los tags nativos de HTML <img> y <video>
+
+Timer,
+TimerTask
+
+Se hace con setTimeout de Javascript.

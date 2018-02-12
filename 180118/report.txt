@@ -22,3 +22,13 @@ Timer: es una clase que abstrae el concepto de temporizar acciones.
 TimerTask: es la clase que prepara acciones para ser temporizadas en un Timer.
 
 Jonathan Ginsburg.
+
+--------------------------------------------------------------------------------
+
+February 8, 2018.
+
+Material Design:
+
+Podemos ver que existen mil paquetes desarrollados por la comunidad de desarrolladores de Android para instalar en nuestros proyectos de Android. Entre ellos, hay varios de Material Design. Para instalarlos, solo se necesita incluirlos en Gradle, darle sync, y empezar a usarlos en nuestro proyecto.
+
+Jonathan Ginsburg.
