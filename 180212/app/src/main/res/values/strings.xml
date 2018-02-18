@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">180212</string>
+    <string name="car_properties_label">Ingrese las características del vehículo que está buscando.</string>
+</resources>
