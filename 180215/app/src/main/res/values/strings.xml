@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ActionBar</string>
+    <string name="ejemplo">Aquí el ejemplo</string>
+    <string name="texto_uno">Texto Uno</string>
+    <string name="texto_dos">texto Dos</string>
+    <string name="texto_tres">texto Tres</string>
+    <string name="fourLabel">¿Es útil el uso de nuestros servicios/productos para usted?</string>
+    <string name="fiveLabel">¿Cómo le parece el aspecto profesional de nuestra compañía?</string>
+    <string name="sixLabel">¿Cuál es la calidad de nuestros servicios en la comparación con las compañías de competencia?</string>
+    <string name="sevenLabel">¿Le parecen los precios de los productos y servicios más aceptables que los de las compañías de competencia?</string>
+    <string name="eightLabel">¿De qué calidad era nuestro servicio a los clientes?</string>
+    <string name="nineLabel">¿Estaba contento/a con nuestros empleados?</string>
+    <string name="tenLabel">¿Cuál es su evaluación total de nuestra compañía?</string>
+    <string name="elevenLabel">¿Recomendaría nuestra compañía a los demás?</string>
+    <string name="twelveLabel">Tus comentarios son muy valiosos</string>
+    <string name="phone_label">Notamos que contestó algunas preguntas con denotación negativa. Ingrese sus y en breve nos contactaremos con usted, o bien, toque el teléfono para hacer una llamada usted mismo.</string>
+</resources>

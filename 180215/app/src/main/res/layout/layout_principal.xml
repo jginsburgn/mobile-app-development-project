@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="mx.itesm.csf.actionbar.Principal">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsing_toolbar_layout"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/az"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:contentDescription="@string/ejemplo"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nested_scroll_view"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!-- Your Code-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fourLabel" />
+
+            <RadioGroup
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/fourA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sí, mucho" />
+
+                <RadioButton
+                    android:id="@+id/fourB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Más bien sí" />
+
+                <RadioButton
+                    android:id="@+id/fourC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No sé" />
+
+                <RadioButton
+                    android:id="@+id/fourD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No, en absoluto" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fiveLabel" />
+
+            <RadioGroup
+                android:id="@+id/five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/fiveA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Muy profesional" />
+
+                <RadioButton
+                    android:id="@+id/fiveB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Profesional" />
+
+                <RadioButton
+                    android:id="@+id/fiveC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No muy profesional" />
+
+                <RadioButton
+                    android:id="@+id/fiveD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nada profesional" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sixLabel" />
+
+            <EditText
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sevenLabel" />
+
+            <CheckBox
+                android:id="@+id/sevenA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mucho más aceptables" />
+
+            <CheckBox
+                android:id="@+id/sevenB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Me agrada las facilidades de pago" />
+
+            <CheckBox
+                android:id="@+id/sevenC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Igual de aceptables" />
+
+            <CheckBox
+                android:id="@+id/sevenD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceptables" />
+
+            <CheckBox
+                android:id="@+id/sevenE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nada aceptables" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eightLabel" />
+
+            <ToggleButton
+                android:id="@+id/eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOn="Bueno"
+                android:textOff="Malo"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nineLabel" />
+
+            <CheckBox
+                android:id="@+id/nineA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Excelente"
+                />
+
+            <CheckBox
+                android:id="@+id/nineB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Bueno"
+                />
+
+            <CheckBox
+                android:id="@+id/nineC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Medianamente bueno"
+                />
+
+            <CheckBox
+                android:id="@+id/nineD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Tiene que mejorar"
+                />
+
+            <CheckBox
+                android:id="@+id/nineE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Malo"
+                />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenLabel" />
+
+            <CheckBox
+                android:id="@+id/tenA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Excelente"
+                />
+
+            <CheckBox
+                android:id="@+id/tenB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Bueno"
+                />
+
+            <CheckBox
+                android:id="@+id/tenC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Medianamente bueno"
+                />
+
+            <CheckBox
+                android:id="@+id/tenD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Tiene que mejorar"
+                />
+
+            <CheckBox
+                android:id="@+id/tenE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle"
+                android:text="Malo"
+                />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elevenLabel" />
+
+            <ToggleButton
+                android:id="@+id/eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOn="Sí"
+                android:textOff="No"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twelveLabel" />
+
+            <EditText
+                android:id="@+id/twelve"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="finish"
+                android:text="Terminar" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

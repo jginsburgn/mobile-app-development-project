@@ -1,0 +1,10 @@
+February 18, 2017.
+
+For the development of this rating application:
+
+	1. I created complex views including lots of input GUI components. Gathering all the information required for the survey posed a challenge of being particularily organized with the resources.
+	2. I learned how to close the application upon finishing its purpose, with finish.
+	3. I learned how to ask for permissions during application runtime.
+	4. I learned how to start a call programatically.
+
+Jonathan Ginsburg.
