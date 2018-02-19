@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_autocomplete"
+        android:icon="@drawable/ic_spellcheck_black_24dp"
+        android:title="Autocomplete" />
+
+    <item
+        android:id="@+id/navigation_shared_preferences"
+        android:icon="@drawable/ic_folder_shared_black_24dp"
+        android:title="Shared Preferences" />
+
+    <item
+        android:id="@+id/navigation_autocomplete_and_shared_preferences"
+        android:icon="@drawable/ic_layers_black_24dp"
+        android:title="Autocomp &amp; Shared Prefs" />
+
+    <item
+        android:id="@+id/navigation_survey"
+        android:icon="@drawable/ic_rate_review_black_24dp"
+        android:title="Survey" />
+
+</menu>
