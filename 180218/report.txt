@@ -1,0 +1,11 @@
+February 19, 2017.
+
+For the development of this bottom navigation combined application:
+
+	1. I made use of Fragments in order to keep material design aligned with the bottom menu.
+	2. I learnt how contexts work based on activities, and not fragments.
+	3. I learnt how to use startActivityForResult() to wait for a response when an activity ends.
+	4. I learnt how to use shared preferences.
+	5. I learnt how to use autocomplete.
+
+Jonathan Ginsburg.
