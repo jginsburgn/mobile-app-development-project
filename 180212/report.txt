@@ -1,0 +1,8 @@
+February 22, 2017.
+
+For the development of this CRM application:
+
+	1. I learnt JSON codec usage in Java.
+	2. I learnt FSIO in Android Java, including external storage.
+
+Jonathan Ginsburg.

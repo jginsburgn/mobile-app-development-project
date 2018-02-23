@@ -1,5 +1,7 @@
 package me.itsof.a180212;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -64,5 +66,10 @@ public class Main extends AppCompatActivity {
         catch (IOException ioe) {
             ioe.printStackTrace();
         }
+    }
+
+    public void goToCRM(View v) {
+        Intent i = new Intent(Main.this, ContactSave.class);
+        startActivity(i);
     }
 }

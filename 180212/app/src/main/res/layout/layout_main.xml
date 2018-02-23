@@ -33,4 +33,11 @@
         android:layout_height="wrap_content"
         android:text="Cargar"
         android:onClick="load" />
+
+    <Button
+        android:id="@+id/crmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRM"
+        android:onClick="goToCRM" />
 </LinearLayout>
