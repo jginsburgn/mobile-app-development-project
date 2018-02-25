@@ -1,0 +1,9 @@
+February 25, 2017.
+
+For the development of this SQLite database application:
+
+	1. I used SQLiteOpenHelper as a class to abstract creation and versioning of databases.
+	2. I used Cursors to navigate the results of queries.
+	3. I used SQLiteDatabase to operate CRUD on the database.
+
+Jonathan Ginsburg.
