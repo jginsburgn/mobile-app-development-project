@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/id"
+            android:id="@+id/identifier"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,7 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Buscar" />
+            android:text="Buscar"
+            android:onClick="Search"/>
     </LinearLayout>
 
     <EditText
@@ -69,4 +70,18 @@
         android:ems="10"
         android:hint="Teléfono"
         android:inputType="phone" />
+
+    <ToggleButton
+        android:id="@+id/shouldUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="Nuevo"
+        android:textOn="Actualizar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="Save"/>
 </LinearLayout>

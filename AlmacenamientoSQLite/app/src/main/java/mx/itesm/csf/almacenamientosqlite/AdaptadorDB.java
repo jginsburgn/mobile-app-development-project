@@ -33,6 +33,9 @@ public class AdaptadorDB {
                     EMAIL + " text not null, " +
                     TELEFONO + " text);";
 
+    static final String BORRAR_DB =
+            "drop table if exists " + BD_TABLA;
+
     private final Context contexto;
 
     DatabaseHelper DBHelper;
@@ -80,47 +83,56 @@ public class AdaptadorDB {
     }
 
     //--- Insertamos registros a la tabla clientes ---
-    public long insertaClientes(String nombre, String email)
-    {
-        ContentValues initialValues = new ContentValues();
-        initialValues.put(LLAVE_NOMBRE, nombre);
-        initialValues.put(LLAVE_EMAIL, email);
-        return db.insert(BD_TABLA, null, initialValues);
+    public long insertaCliente(String nombre, String apellidoPaterno, String apellidoMaterno, String email, String telefono) {
+        ContentValues values = new ContentValues();
+        values.put(NOMBRE, nombre);
+        values.put(APELLIDO_PATERNO, apellidoPaterno);
+        values.put(APELLIDO_MATERNO, apellidoMaterno);
+        values.put(EMAIL, email);
+        values.put(TELEFONO, telefono);
+        return db.insert(BD_TABLA, null, values);
     }
 
     //--- Borra un cliente en particular ---
-    public boolean borraCliente(long idFila)
-    {
-        return db.delete(BD_TABLA, LLAVE_IDFILA + "=" + idFila, null) > 0;
+    public boolean borraCliente(long idFila) {
+        return db.delete(BD_TABLA, ID + "= ?", new String[] {Long.toString(idFila)}) > 0;
     }
 
     //--- Recuperamos todos los registros de la tabla ---
-    public Cursor obtenTodosLosClientes()
-    {
-        return db.query(BD_TABLA, new String[] {LLAVE_IDFILA, LLAVE_NOMBRE,
-                LLAVE_EMAIL}, null, null, null, null, null);
+    public Cursor obtenTodosLosClientes() {
+        return db.query(BD_TABLA, new String[] {ID, NOMBRE,
+                EMAIL}, null, null, null, null, null);
     }
 
     //--- Recuperamos un registro de cliente en particular ---
     public Cursor obtieneUnCliente(long idFila) throws SQLException
     {
         Cursor mCursor =
-                db.query(true, BD_TABLA, new String[] {LLAVE_IDFILA,
-                                LLAVE_NOMBRE, LLAVE_EMAIL}, LLAVE_IDFILA + "=" + idFila, null,
-                        null, null, null, null);
-        if (mCursor != null) {
-            mCursor.moveToFirst();
-        }
+                db.query(BD_TABLA,
+                        null,
+                        ID + " = ?",
+                        new String[] {Long.toString(idFila)},
+                        null,
+                        null,
+                        null
+                );
+        Log.d("Resultados", Integer.toString(mCursor.getCount()));
         return mCursor;
     }
 
     //--- Actualizamos un registro  ---
-    public boolean actualizaCliente(long idFila, String nombre, String email)
+    public int actualizaCliente(long idFila, String nombre, String apellidoPaterno, String apellidoMaterno, String email, String telefono)
     {
-        ContentValues args = new ContentValues();
-        args.put(LLAVE_NOMBRE, nombre);
-        args.put(LLAVE_EMAIL, email);
-        return db.update(BD_TABLA, args, LLAVE_IDFILA + "=" + idFila, null) > 0;
+        ContentValues values = new ContentValues();
+        values.put(NOMBRE, nombre);
+        values.put(APELLIDO_PATERNO, apellidoPaterno);
+        values.put(APELLIDO_MATERNO, apellidoMaterno);
+        values.put(EMAIL, email);
+        values.put(TELEFONO, telefono);
+        return db.update(BD_TABLA,
+                values,
+                ID + "= ?",
+                new String[]{Long.toString(idFila)});
     }
 
 }
