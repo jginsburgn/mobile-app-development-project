@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CRUDSQL</string>
+    <string name="database_name">crm.sqlite</string>
+    <integer name="database_version">1</integer>
+</resources>

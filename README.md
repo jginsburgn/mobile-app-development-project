@@ -12,5 +12,6 @@ The projects contained in here have the following descriptions.
 - 180218-> Combination of 180215 and 180201. Includes Fragment usage.
 - 180225-> SQLite based CRM, with usage of SQLiteOpenHelper, Cursors and SQLiteDatabase classes.
 - 180301-> A [Google Volley](https://developer.android.com/training/volley/index.html) example.
+- 180305-> SQLite based CRM, with usage of SQLiteOpenHelper, Cursors and SQLiteDatabase classes, with more advanced entities and CRUD.
 
 Jonathan Ginsburg. January 15, 2018.
