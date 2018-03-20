@@ -1,0 +1,15 @@
+March 15, 2017.
+
+For the current app I:
+	* Created a subclass of AsyncTask.
+	* Created an interface to communicate the results obtained from fetching an online resource asynchronously.
+	* Created a listview for displaying the categories of my CMSs posts.
+	* Created a listview for displaying the posts of each category of my CMS.
+	* Created a webview to render the contents of posts when chosen.
+
+Volley VS AsyncTask:
+	* Volley abstracts threading.
+	* Volley takes care of parsing.
+	* Volley is not a native library.
+
+Jonathan Ginsburg.

@@ -13,5 +13,6 @@ The projects contained in here have the following descriptions.
 - 180225-> SQLite based CRM, with usage of SQLiteOpenHelper, Cursors and SQLiteDatabase classes.
 - 180301-> A [Google Volley](https://developer.android.com/training/volley/index.html) example.
 - 180305-> SQLite based CRM, with usage of SQLiteOpenHelper, Cursors and SQLiteDatabase classes, with more advanced entities and CRUD.
+- 180315-> A WordPress RESTful API consumer based on AsyncTask, JSON{Object,Array} and HttpUrlConnection.
 
 Jonathan Ginsburg. January 15, 2018.
