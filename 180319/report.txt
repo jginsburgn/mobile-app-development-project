@@ -1,0 +1,15 @@
+March 19, 2017.
+
+For the current app I:
+	* Created a wrapper class for Volley.
+	* Created an interface to communicate the results obtained from fetching an online resource asynchronously.
+	* Created a listview for displaying the categories of my CMSs posts.
+	* Created a listview for displaying the posts of each category of my CMS.
+	* Created a webview to render the contents of posts when chosen.
+
+Volley VS Retrofit:
+	* Retrofit uses Java annotations (sentences beginning with @) to create interfaces that translate to HTTP requests.
+	* It has a model to translate payloads to objects.
+	* It is converter agnostic.
+
+Jonathan Ginsburg.
