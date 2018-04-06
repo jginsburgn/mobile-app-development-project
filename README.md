@@ -15,5 +15,6 @@ The projects contained in here have the following descriptions.
 - 180305-> SQLite based CRM, with usage of SQLiteOpenHelper, Cursors and SQLiteDatabase classes, with more advanced entities and CRUD.
 - 180315-> A WordPress RESTful API consumer based on AsyncTask, JSON{Object,Array} and HttpUrlConnection.
 - 180319-> A WordPress RESTful API consumer based on Google's Volley. (A modification of 180315)
+- 180405-> An application that uses Google Volley to request text and an image and displays the data in alerts.
 
 Jonathan Ginsburg. January 15, 2018.

@@ -1,0 +1,9 @@
+April 5, 2017.
+
+For the current app I:
+	* Used Google Volley.
+	* Studied the request queue.
+	* Used the JSON, arrayjson, string and image request.
+	* Used the alert builders and view inflators to correctly display the data.
+
+Jonathan Ginsburg.
