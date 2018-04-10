@@ -16,5 +16,6 @@ The projects contained in here have the following descriptions.
 - 180315-> A WordPress RESTful API consumer based on AsyncTask, JSON{Object,Array} and HttpUrlConnection.
 - 180319-> A WordPress RESTful API consumer based on Google's Volley. (A modification of 180315)
 - 180405-> An application that uses Google Volley to request text and an image and displays the data in alerts.
+- 180406-> An application that uses Google Volley to request text and an image from my own PHP web service.
 
 Jonathan Ginsburg. January 15, 2018.

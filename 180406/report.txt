@@ -1,0 +1,8 @@
+April 6, 2017.
+
+For the current app I:
+	* Used Google Volley.
+	* Studied the request queue.
+	* Used the JSON, arrayjson, string and image request.
+
+Jonathan Ginsburg.
