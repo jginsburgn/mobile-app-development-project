@@ -17,5 +17,6 @@ The projects contained in here have the following descriptions.
 - 180319-> A WordPress RESTful API consumer based on Google's Volley. (A modification of 180315)
 - 180405-> An application that uses Google Volley to request text and an image and displays the data in alerts.
 - 180406-> An application that uses Google Volley to request text and an image from my own PHP web service.
+- final-exam -> A full-stack (backend and frontend) application for a jewelry store.
 
 Jonathan Ginsburg. January 15, 2018.
